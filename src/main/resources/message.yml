@@ -1,0 +1,80 @@
+scoreboard:
+  title: "&4&lZonix &7&l[&c&lUS&7&l]"
+  ##PlaceHolders for waiting scoreboard: <player_left>, <max_player>
+  waiting-scoreboard:
+  - "&7&m-------------------"
+  - "&cEvent &7(Sumo)"
+  - "&4* &fPlayers&7: <player_left>/<max_player>"
+  - "&4* &fState&7: Waiting"
+  - "&7&m-------------------"
+  - "&cWaiting for players..."
+  - "&7&m-------------------"
+  ##PlaceHolders for countdown scoreboard: <player_left>, <max_player>, <countdown_int>, <countdown_format>
+  countdown-scoreboard:
+  - "&7&m-------------------"
+  - "&cEvent &7(Sumo)"
+  - "&4* &fPlayers&7: <player_left>/<max_player>"
+  - "&4* &fState&7: Counting down"
+  - "&7&m-------------------"
+  - "&cStarting in: <countdown_format>"
+  - "&7&m-------------------"
+  ##PlaceHolders for ingame scoreboard: <player_left>, <max_player>, <player1>, <player2>, <round>, <player1_cps>, <player2_cps>
+  ingame-scoreboard:
+  - "&7&m-------------------"
+  - "&cEvent &7(Sumo)"
+  - "&4* &fPlayers&7: <player_left>/<max_player>"
+  - "&4* &fState&7: InGame"
+  - "&4* &fRound&7: <round>"
+  - "&7&m-------------------"
+  - "&4<player1>"
+  - " &cvs "
+  - "&4<player2>"
+  - "&7(&c<player1_ping>ms&7) &7| (&c<player2_ping>ms&7)"
+  - "&7(&c<player1_cps>CPS&7) &7| (&c<player2_cps>CPS&7)"
+  - "&7&m-------------------"
+  ##PlaceHolders for finish scoreboard: <player_left>, <max_player>, <winner>
+  finish-scoreboard:
+  - "&7&m-------------------"
+  - "&cEvent &7(Sumo)"
+  - "&4* &fWinner&7: "
+  - "   &c<winner>"
+  - " "
+  - "&4Rebooting in <restart>"
+  - "&7&m-------------------"
+no-permission: "&cYou don't have permissions to use this command!"
+join-buildmode: "&aYou successfully joined buildmode!"
+exit-buildmode: "&aYou successfully exited buildmode!"
+set-hub: "&aYou successfully set sumo hub! Now players will spawn in there when they joined this server and died, &cREMEMBER! After set all spawn coordinates, restart the server."
+set-spawn: "&aYou successfully set sumo spawn! &cREMEMBER! After set all spawn coordinates, restart the server."
+##PlaceHolders for start-count: <time>
+start-count: "&eThe match starts in &a<time>&e..."
+match-start: "&aThe match has started, good luck!"
+##PlaceHolders for start-count: <loser>, <winner>
+eliminated-message: "&e(Event) &c<loser> &7has been eliminated by &a<winner>"
+starting-event-match-againest: "&eStarting event match &a(<player1> vs <player2>)"
+broadcast-winner: 
+- "&7&m------------------------------------"
+- "&e(Event) &aWinner: <winner>"
+- "&7&m------------------------------------"
+##PlaceHolders for join-message and leave-message: <player>, <max_player>
+join-message:
+- "&e<name> &cjoined sumoevent &7(<player>/<max_player>)"
+leave-message:
+- "&e<name> &cleft sumoevent &7(<player>/<max_player>)"
+leave-while-fighting-message:
+- "&e<name> &cleft sumoevent while fighting &7(<player>/<max_player>)"
+countdown: "&cSumo Event will start in <countdown> seconds"
+restart-message: "&cServer will restart in <restart> seconds"
+round: "&e(Event) &cRound <round> is starting..."
+##PlaceHolders for ping: <ping>
+ping: "&cYour ping&7: <ping>ms"
+##PlaceHolders for other-player-ping: <player>, <ping>
+other-player-ping: "&c<player>'s ping&7: <ping>ms"
+##PlaceHolders for reserve-broadcast: <reserve>
+reserve-broadcast: "&e(Event) &cBecase of player amount is a even, so &7<reserve> &cdoesn't need to fight in round <round>."
+##Message for disallow players to join:
+game-full: "&e(Event) &cThe game has reached the max amount of players."
+no-permissions-to-spectate: "&e(Event) &cYou don't have permissions to spectate this event."
+whitelist-is-on: "&e(Event) &cThe event whitelist is opening."
+whitelist-off: "&aSuccessfully toggled off whitelist! Now player can join the event!"
+whitelist-on: "&aSuccessfully toggled on whitelist! Now player cannot join the event!"

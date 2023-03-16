@@ -1,0 +1,83 @@
+countdown: 300
+max-players: 30
+event-world-name: "world"
+restart-second: 30
+##kick-player-second is depends on restart-second, so if kick-player-second is 5 then system will kick all player when restart-second count to 5
+kick-player-second: 5
+kick-player-reason: "&4&lZonix: &cThanks for joining this sumoevent!"
+check-player-cps: true
+create-and-save-players-data: true
+stats-gui:
+  inventory-size: 27
+  inventory-name: "&7&lYour &c&lstats"
+  inventory:
+    wins:
+      name: "&c&lYour wins"
+      lore:
+      - "&7- &9<wins>"
+      position: 10
+    kills:
+      name: "&c&lYour kills"
+      lore:
+      - "&7- &9<kills>"
+      position: 13
+    deaths:
+      name: "&c&lYour deaths"
+      lore:
+      - "&7- &9<deaths>"
+      position: 14
+##If you enable bungeecord mode, player will receive an item on-join to leave the sumoevent(item will be removed when game start) and when the game end and kick player they will back to the assign lobby
+##Suggest to make it be true if you are using bungeecord
+bungeecord-mode:
+  enable: true
+  leave-item:
+    name: "&cBack to lobby &7(Right click)"
+    position: 8
+  lobby-server: "lobby"
+  ##bungee-win-broadcast is when the game finished, it will broadcast to whole bungee server or not, although enable is false, this settings will be used.
+  bungee-win-broadcast: true
+##whitelist settings will be get when server started
+whitelist: false
+##Spectate mode (in maintainance)
+spectate-mode:
+  enable: true
+  teleport-success: "&aTeleported to <player>."
+  join-spectate-enderpearl-name: "&cSpectate &7(Right click)"
+  leave-spectate-ender-eye-name: "&cLeave spectate &7(Right click)"
+  teleport-player-smileball-name: "&cTeleport to player who is fighting &7(Right click)"
+  teleport-spawn-painting-name: "&cTeleport to spawn &7(Right click)"
+  join-spectate-mode-message: "&aSuccessfully joined spectate mode!"
+  leave-spectate-mode-message: "&aSuccessfully left spectate mode!"
+  teleport-back-to-spawn-message: "&aSuccessfully teleported back to spawn!"
+  cooldown-message: "&cYou are still in cooldown, please wait..."
+  spectate-inventory:
+    inventory-name: "&cFighting players:"
+    ##player1-item and player2-item placeholder: <player>
+    player1-item:
+      name: "&cPlayer 1 &7(<player>)"
+      lore:
+      - "&7Click to teleport to <player>"
+      position: 11
+    player2-item:
+      name: "&cPlayer 2 &7(<player>)"
+      lore:
+      - "&7Click to teleport to <player>"
+      position: 15
+##Chat system
+##Note: chat system ONLY support PermissionsEx.
+chat:
+  enable: true
+  cooldown:
+    enable: true
+    cooldown-message: "&cYou are still in cooldown, please wait..."
+    ##cooldown-ticks: 20 = 1 seconds, 100 = 5 seconds
+    cooldown-ticks: 20
+    ##chat-format placeholder: <prefix>, <suffix>, <player_name>, <message>.
+  chat-format: "<prefix><player_name><suffix>: <message>"
+##MOTD changing system
+motd:
+  enable: true
+  waiting-for-players: "&e(Event) &aWaiting for players..."
+  counting-down: "&e(Event) &aCounting down..."
+  in-game: "&e(Event) &cGame is running..."
+  game-finished: "&e(Event) &aGame Finished"

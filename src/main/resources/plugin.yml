@@ -1,0 +1,12 @@
+name: Sumo
+version: 1.0
+author: CARTERHH
+main: me.sumo.Main
+commands:
+  settings:
+  start:
+  ping:
+  countdown:
+  stats:
+  wl:
+softdepend: [PlaceholderAPI]
